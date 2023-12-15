@@ -10,8 +10,8 @@
 
 하이퍼바이저는 2가지 종류로 구분됩니다. `네이티브`라 불리는 타입1 하이퍼바이저와, `호스티드`라 불리는 타입2 하이퍼바이저입니다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/41a758ad-bd03-4658-8b57-62af70cf1378)   
-출처: https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/9b2ce0b5-7a74-42d0-a187-ffdfd9991626)   
+출처: [위키백과](https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80)
 
 ## 타입1 하이퍼바이저
 
