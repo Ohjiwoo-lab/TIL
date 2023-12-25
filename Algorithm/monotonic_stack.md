@@ -150,4 +150,6 @@ def solution(prices):
     return answer
 ```
 
+<hr/>
+
 😊 2023-12-14 첫 번째 TIL 완료!
