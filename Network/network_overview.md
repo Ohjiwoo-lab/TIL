@@ -2,7 +2,7 @@
 
 # 네트워크 개요
 
-![프레젠테이션1](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/f1d3ee57-07ef-4e86-896f-9d4c47d16980)
+![프레젠테이션1](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/853a1677-7452-4cd1-8c97-ff5df4dec9b8)
 
 네트워크 구조를 한 눈에 정리한 모습입니다.
 
