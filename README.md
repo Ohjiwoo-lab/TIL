@@ -10,7 +10,12 @@
 
 ## 네트워크
 
-[OSI 7 Layer와 식별자](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/network_overview.md)
+[OSI 7 Layer와 식별자](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/network_overview.md)   
+[통신 vs 네트워크](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/communications_vs_network.md)
+
+## 데이터베이스
+
+[트랜잭션 격리 레벨](https://github.com/Ohjiwoo-lab/TIL/blob/main/Database/transaction_isolation_level.md)
 
 ## 테라폼
 
