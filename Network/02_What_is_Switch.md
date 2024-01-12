@@ -2,7 +2,7 @@
 
 # 스위치란?
 
-스위치에 대해 이해하려면 먼저 호스트를 알아야 합니다. [저번 글](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/network_overview.md#port-%EB%B2%88%ED%98%B8-ip-%EC%A3%BC%EC%86%8C-mac-%EC%A3%BC%EC%86%8C%EA%B0%80-%EC%8B%9D%EB%B3%84%ED%95%98%EB%8A%94-%EA%B2%83)에서 IP주소가 `호스트에 대한 식별자`라고 했었습니다.
+스위치에 대해 이해하려면 먼저 호스트를 알아야 합니다. [저번 글](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/01_Network_Overview.md#port-%EB%B2%88%ED%98%B8-ip-%EC%A3%BC%EC%86%8C-mac-%EC%A3%BC%EC%86%8C%EA%B0%80-%EC%8B%9D%EB%B3%84%ED%95%98%EB%8A%94-%EA%B2%83)에서 IP주소가 `호스트에 대한 식별자`라고 했었습니다.
 
 그러면 호스트란 무엇일까요? 호스트는 네트워크에 연결되어 있는 컴퓨터를 의미합니다. 네트워크에 연결되어 있다면 모든 컴퓨터는 호스트가 될 수 있습니다.
 
