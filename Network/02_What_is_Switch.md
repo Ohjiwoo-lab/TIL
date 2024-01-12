@@ -1,3 +1,5 @@
+> 유튜브 [널널한 개발자 TV](https://www.youtube.com/watch?v=k1gyh9BlOT8&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy)의 강의 내용을 요약하거나 이해한 내용을 토대로 재구성하여 작성된 글입니다.
+
 # 스위치란?
 
 스위치에 대해 이해하려면 먼저 호스트를 알아야 합니다. [저번 글](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/network_overview.md#port-%EB%B2%88%ED%98%B8-ip-%EC%A3%BC%EC%86%8C-mac-%EC%A3%BC%EC%86%8C%EA%B0%80-%EC%8B%9D%EB%B3%84%ED%95%98%EB%8A%94-%EA%B2%83)에서 IP주소가 `호스트에 대한 식별자`라고 했었습니다.
@@ -28,7 +30,7 @@ Peer-to-Peer 네트워크 구조에서는 Peer가 End-point가 될 수 있으며
 네트워크를 도로라고 생각해보면, 도로에는 교차로가 있을 것입니다.
 
 ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/ba32006c-f901-4a81-ba59-b0f06b68f792)   
-출처: https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8%EB%A1%9C
+출처: [위키백과](https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8%EB%A1%9C)
 
 위와 같은 교차로가 있다면, 자동차는 어느 방향으로 갈 지 선택할 것입니다. 직진할 수도 있고, 우회전을 할 수도 있고, 좌회전을 할 수도 있습니다. 이렇게 가야할 경로를 선택하는 행위가 스위칭입니다.
 
