@@ -10,7 +10,8 @@
 
 ## 네트워크
 
-[OSI 7 Layer와 식별자](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/network_overview.md)   
+[OSI 7 Layer와 식별자](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/01_Network_Overview.md)   
+[스위치란?](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/02_What_is_Switch.md)   
 [통신 vs 네트워크](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/communications_vs_network.md)
 
 ## 데이터베이스
