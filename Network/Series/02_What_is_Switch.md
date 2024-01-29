@@ -1,5 +1,3 @@
-> 유튜브 [널널한 개발자 TV](https://www.youtube.com/watch?v=k1gyh9BlOT8&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy)의 강의 내용을 요약하거나 이해한 내용을 토대로 재구성하여 작성된 글입니다.
-
 # 스위치란?
 
 스위치에 대해 이해하려면 먼저 호스트를 알아야 합니다. [저번 글](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/01_Network_Overview.md#port-%EB%B2%88%ED%98%B8-ip-%EC%A3%BC%EC%86%8C-mac-%EC%A3%BC%EC%86%8C%EA%B0%80-%EC%8B%9D%EB%B3%84%ED%95%98%EB%8A%94-%EA%B2%83)에서 IP주소가 `호스트에 대한 식별자`라고 했었습니다.
@@ -57,6 +55,12 @@ Peer-to-Peer 네트워크 구조에서는 Peer가 End-point가 될 수 있으며
 
 인터넷은 라우터의 집합체라고 할 수 있습니다. 결국 패킷이 이동하다가 라우터를 만나게 되면 연결되어 있는 네트워크 인터페이스 중에 패킷의 경로를 선택합니다. 이때 `선택의 기준`이 되는 것이 `라우팅 테이블`입니다. 라우터는 서로 통신을 하면서 라우팅 테이블을 업데이트하고, 업데이트된 라우팅 테이블에 근거하여 패킷의 경로를 선택하는 스위칭을 하게 됩니다.
 
+# Reference
+
+[Host, Switch, Network 이들의 관계에 대해](https://www.youtube.com/watch?v=kGst-VftN1w&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=3)
+
+[Switch가 하는 일은 Switching이다.](https://www.youtube.com/watch?v=oAbukpZbpTg&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=6)
+
 <hr/>
 
-🤗 2024-1-12: 스위치란? 정리
+🤗 2024-1-12: 스위치란? 정리   

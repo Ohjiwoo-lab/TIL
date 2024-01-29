@@ -1,5 +1,3 @@
-> [처음 시작하는 Infrastructure as Code: AWS & 테라폼](https://www.inflearn.com/course/%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4-%ED%85%8C%EB%9D%BC%ED%8F%BC-aws) 강의를 들으며 데브옵스와 테라폼에 대해 공부합니다.
-
 # 데브옵스란?
 
 데브옵스(DevOps)는 개발(Development)와 운영(Operations)의 합성어입니다. 즉, 개발팀과 운영팀 사이의 생각의 차이를 줄여, 효율적인 개발과 운영을 하기 위해 등장한 개념입니다.
@@ -62,6 +60,10 @@
 그렇기 때문에 코드의 장점을 모두 가지고 있습니다. 작성하는 속도가 빠르고, 재사용할 수 있으며, 유지보수와 문서화하기도 쉽습니다. 그래서 IaC는 필수적인 요소로 생각되고 있습니다.
 
 IaC 도구 중에 가장 많이 사용되고 있는 것은 [테라폼](https://www.terraform.io/)입니다. AWS, GCP, Azure 등 다양한 클라우드를 제공해주고 있습니다. 이를 통해 AWS 인프라를 구축하는 실습을 진행할 예정입니다.
+
+# Reference
+
+<https://www.inflearn.com/course/%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4-%ED%85%8C%EB%9D%BC%ED%8F%BC-aws>
 
 <hr/>
 

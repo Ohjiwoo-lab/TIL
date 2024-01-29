@@ -215,6 +215,10 @@ aws configure
 
 설정이 완료되면 다음과 같은 파일들이 생성됩니다.
 
+# Reference
+
+<https://www.inflearn.com/course/%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4-%ED%85%8C%EB%9D%BC%ED%8F%BC-aws>
+
 <hr/>
 
 😃 2023-12-25 TIL

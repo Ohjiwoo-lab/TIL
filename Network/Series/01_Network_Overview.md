@@ -1,5 +1,3 @@
-> 유튜브 [널널한 개발자 TV](https://www.youtube.com/watch?v=k1gyh9BlOT8&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy)의 강의 내용을 요약하거나 이해한 내용을 토대로 재구성하여 작성된 글입니다.
-
 # 네트워크 개요
 
 ![프레젠테이션1](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/853a1677-7452-4cd1-8c97-ff5df4dec9b8)
@@ -50,6 +48,12 @@ Port 번호는 전송 계층에서 사용되는 식별자로, 수행하는 업�
 주로 7계층에 해당하는 HTTP 프로토콜을 사용하는 S/W 개발, 관리 업무를 하는 사람들은 `프로세스 식별자`라고 해석합니다. HTTP는 보통 TCP 80포트 또는 8080포트를 사용하고, 프로세스마다 부여되는 포트가 있기 때문입니다. 3,4계층에 해당하는 네트워크 관리 업무를 하는 사람들은 `서비스 식별자`라고 해석합니다. S/W 개발자들이 보통 HTTP 포트 열어주세요.라고 요청하기 때문에 어떤 서비스를 위한 번호라고 여기는 것입니다. 1,2계층에 해당하는 하드웨어를 직접 설치하는 업무를 하는 사람들은 `인터페이스 식별자`라고 해석합니다. 공유기에 랜카드를 꼽을 때 단자의 번호가 있는데, 이 번호를 식별하는 것이라고 여기는 것입니다.
 
 이런 식으로 Port 번호는 주어진 업무에 따라 다양하게 해석될 수 있음을 이해하는 것이 중요합니다.
+
+# Reference
+
+[네트워크를 배우려는 사람들을 위해](https://www.youtube.com/watch?v=k1gyh9BlOT8&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy)
+
+[MAC주소, IP주소, Port번호가 식별하는 것](https://www.youtube.com/watch?v=JDh_lzHO_CA&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=2)
 
 <hr/>
 
