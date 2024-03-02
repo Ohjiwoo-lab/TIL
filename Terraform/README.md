@@ -4,16 +4,10 @@
 
 - 데브옵스의 철학과 데브옵스를 실현하기 위한 IaC 기술 중 가장 널리 알려진 Terraform을 어떻게 사용하는지를 코드와 함께 정리할 예정입니다.
 
-## 내용 요약
+## Summary
 
-[데브옵스란?](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/01_What_is_DevOps.md)   
+- 데브옵스의 5가지 철학(문화, 자동화, 측정, 공유, 축적)과 IaC의 개념 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/01_What_is_DevOps.md)     
 
-- 데브옵스의 5가지 철학(문화, 자동화, 측정, 공유, 축적)과 IaC의 개념
+- 테라폼의 구성요소와 기본 명령어(init, plan, apply, import) 및 작동 원리 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/02_Terraform_basic.md) 
 
-[테라폼 기초](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/02_Terraform_basic.md)   
-
-- 테라폼의 구성요소와 기본 명령어(init, plan, apply, import) 및 작동 원리
-
-[테라폼 사용을 위한 환경구축](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/03_Terraform_configuration.md)
-
-- AWS EC2 인스턴스를 통해 테라폼을 사용하기 위한 환경 세팅
+- AWS EC2 인스턴스를 통해 테라폼을 사용하기 위한 환경 세팅 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/03_Terraform_configuration.md)

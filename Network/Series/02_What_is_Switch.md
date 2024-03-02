@@ -61,6 +61,6 @@ Peer-to-Peer 네트워크 구조에서는 Peer가 End-point가 될 수 있으며
 
 [Switch가 하는 일은 Switching이다.](https://www.youtube.com/watch?v=oAbukpZbpTg&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=6)
 
-<hr/>
+# History
 
 📌 2024-1-12: 스위치란? 정리   

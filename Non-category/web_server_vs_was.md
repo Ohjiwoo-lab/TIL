@@ -15,3 +15,7 @@ WSGI는 웹 서버로부터 전달된 HTTP 요청을 파이썬이 이해할 수 
 그래서 보통 nginx와 같은 웹 서버와 함께 사용한다. nginx + gunicorn + django 조합이 많이 사용된다. 여기서 gunicorn과 django 앱을 합쳐서 WAS라고 한다.
 
 > 추가로 웹 서버 + WAS + DB 구조를 3-tier 아키텍처라 하며 웹사이트를 배포할 때 주로 사용한다.
+
+# History
+
+📌 2024-2-29: 웹 서버 vs WAS

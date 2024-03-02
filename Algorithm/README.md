@@ -4,8 +4,6 @@
 
 - 클라우드 엔지니어로 진로를 확정하면서 코딩테스트가 예전만큼 중요해지지는 않았지만(개발자보다는) 그래도 꾸준히 알고리즘 문제를 풀려고 노력하고 있습니다.
 
-## 내용 요약
+## Summary
 
-[모노토닉 스택](https://github.com/Ohjiwoo-lab/TIL/blob/main/Algorithm/monotonic_stack.md)   
-
-- 모노토닉 스택: 항상 증가 또는 감소하는 상태를 유지하는 스택
+- 모노토닉 스택이란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Algorithm/monotonic_stack.md)
