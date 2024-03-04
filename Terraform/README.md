@@ -11,3 +11,7 @@
 - 테라폼의 구성요소와 기본 명령어(init, plan, apply, import) 및 작동 원리 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/02_Terraform_basic.md) 
 
 - AWS EC2 인스턴스를 통해 테라폼을 사용하기 위한 환경 세팅 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/03_Terraform_configuration.md)
+
+- VPC의 구성요소(서브넷, 라우팅 테이블, 인터넷 게이트웨이, NAT 게이트웨이, VPC 엔드포인트)를 Terraform으로 구현하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/04_VPC_by_Terraform.md)
+
+- S3를 Terraform으로 구현하고 aws cli를 통해 파일 업로드 및 다운로드하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/05_S3_by_Terraform.md)

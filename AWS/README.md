@@ -8,4 +8,4 @@
 
 ## Summary
 
-- 프라이빗 서브넷 vs 퍼블릭 서브넷 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/subnet.md)
+- VPC의 구성요소 및 프라이빗 서브넷, 퍼블릭 서브넷의 차이점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_and_Subnet.md)
