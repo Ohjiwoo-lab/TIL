@@ -9,3 +9,4 @@
 ## Summary
 
 - VPC의 구성요소 및 프라이빗 서브넷, 퍼블릭 서브넷의 차이점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_and_Subnet.md)
+- IAM 구성요소와 Policy 구조 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/IAM.md)
