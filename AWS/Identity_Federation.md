@@ -50,7 +50,7 @@ AWS 외부의 사용자에게 AWS 리소스에 접근할 권한을 부여하기 
 
 # Reference
 
-[Udemy 강의](https://www.udemy.com/course/aws-csa-professional/?couponCode=KRLETSLEARNNOW)
+[Udemy 강의 - AWS Certified Solutions Architect Professional](https://www.udemy.com/course/aws-csa-professional/?couponCode=KRLETSLEARNNOW)
 
 # History
 
