@@ -42,6 +42,10 @@ SNS와 SQS는 배타적인 서비스가 아니라 함께 사용될 수 있다. �
 
 이처럼 아키텍처를 설계할 때 `Decoupling`을 적용한다면 확장성이 좋고 안정적인 서비스를 만들 수 있을 것이다.
 
+# Reference
+
+[AWS 강의실 - Serverless 기반 아키텍처/개발](https://www.youtube.com/watch?v=mx2tvRkBVKY)
+
 # History
 
 📌 2024-3-5: Decoupling이란?   
