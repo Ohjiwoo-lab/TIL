@@ -1,10 +1,8 @@
 # AWS
 
-- AWS 서비스와 관련된 개념을 정리하고 있습니다.
+현재 AWS Solutions Architect Professioanl 자격증을 공부하는 중입니다. 공부하며 배운 내용을 복습하기 위해 정리하고 있습니다. AWS 서비스와 관련된 개념과 어떤 기능을 가지고 있는지를 정리해나갈 예정입니다.
 
-- 각 서비스가 무엇인지와 어떤 기능을 가지고 있는지를 정리해나갈 예정입니다.
-
-> 현재 AWS Solutions Architect Associate 자격증을 취득한 상태이고, Professioanl 자격증을 공부하는 중입니다.
+AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해나가고 있기 때문에 모든 서비스를 다 정리할 수는 없습니다. 하지만 계속 추가하면서 대표적으로 사용되는 서비스들은 모두 정리하고 싶습니다.
 
 ## Summary
 
@@ -12,8 +10,10 @@
 
 - IAM 구성요소와 Policy 구조 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/IAM.md)
 
-- Identity Federation 3가지 방법 (SAML 2.0, Custom Identity Broker, Web Identity) [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Identity_Federation.md)
+- Identity Federation 3가지 방법 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Identity_Federation.md)
 
-- AWS Directory Service 3가지 (AWS Managed AD, AD Connector, Simple AD) [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Directory_Services.md)
+- AWS Directory Service 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Directory_Services.md)
 
 - AWS GuardDtuy란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/GuardDuty.md)
+
+- EC2 배치 그룹 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/EC2_Placement_Groups.md)
