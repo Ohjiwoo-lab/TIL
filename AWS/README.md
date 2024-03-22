@@ -17,3 +17,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - AWS GuardDtuy란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/GuardDuty.md)
 
 - EC2 배치 그룹 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/EC2_Placement_Groups.md)
+
+- CloudTrail 이벤트 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/CloudTrail.md)
