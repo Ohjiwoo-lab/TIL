@@ -19,3 +19,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - EC2 배치 그룹 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/EC2_Placement_Groups.md)
 
 - CloudTrail 이벤트 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/CloudTrail.md)
+
+- Auto Scaling Groups 스케일링 정책 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Auto_Scaling_Groups.md)
