@@ -70,43 +70,56 @@ ASG는 EC2 인스턴스 콘솔에서 생성할 수 있다.
 
 ## 인스턴스 시작 옵션 선택
 
-인스턴스 유형은 선택한 시작 템플릿에 따라 t2.micro로 지정되어 있는데, `시작 템플릿 재정의`를 통해 다르게 변경할 수도 있다. 또한 기본 VPC와 서브넷을 선택해준다.
+인스턴스 유형은 선택한 시작 템플릿에 따라 t2.micro로 지정되어 있는데, `시작 템플릿 재정의`를 통해 다르게 변경할 수도 있다. 또한 VPC와 서브넷을 선택해야 하는데, 여기서는 기본 VPC와 가용영역 `ap-northeast-2a`, `ap-northeast-2c`로 선택하였다. t2.micro의 경우 `ap-northeast-2b`와 `ap-northeast-2d`에서는 사용할 수 없기 때문이다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/6089cc26-ec0b-4f9e-9e3f-4d1313f3b4c8)
+> 만약 사용할 수 없는 가용영역을 선택한다면 ASG가 제대로 동작하지 않게 된다.
+
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/67c679de-5355-4859-9650-d101cb18ca14)
 
 ## 로드밸런서 연결
 
 ASG는 로드밸런서 없이 사용하는 경우는 거의 없다. ASG에 의해 늘어난 EC2 인스턴스에도 트래픽이 고르게 전달되기 위해서는 로드밸런서가 필수이기 때문이다. 기존에 로드밸런서가 있다면 선택하면 되는데, 생성해둔 것이 없기 때문에 새롭게 만들어주었다. 로드밸런서와 함께 대상 그룹도 함께 생성하였다.
 
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/58ca1e85-314e-48e0-a9f7-5f83e6a1fb10)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/ce5381aa-a54e-49fb-8751-dc08c2efbe9c)
+
+> 이렇게 하면 로드밸런서와 대상 그룹이 자동으로 생성되고, ASG에 의해 생성된 인스턴스는 자동으로 대상 그룹에 포함되어 로드밸런서로부터 트래픽을 받을 수 있다.
+
 상태 확인의 경우 EC2 인스턴스 상태확인과 로드밸런서 상태확인이 있는데, EC2 상태확인은 언제나 활성화되어 있다. 로드밸런서 수준에서 비정상인 인스턴스로 트래픽을 보내지 않기 위하여 로드밸런서 상태확인도 활성화하였다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/6dab1cc0-6219-4d08-ad06-91ab7faba564)
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/fcf08a22-c579-4038-ae09-38276ff80f37)
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/69b70070-616c-47e4-b817-0db786e709ee)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/d9c49df7-1128-4b99-ae80-e00d38580df5)
 
 ## ASG 크기 조정
 
 ASG 내의 EC2 인스턴스의 개수를 지정할 수 있다. 유지되었으면 하는 개수와 최소 개수, 최대 개수를 지정할 수 있다. 아직 스케일링 정책을 설정하기 전이기 때문에 모두 1로 설정해주었다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/1f18b0a0-a962-435e-9b11-6ffa460b1577)
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/0642e83e-e371-4812-8bc4-80338e2a6069)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/c5a113aa-8833-41eb-b414-fe333b31df5e)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/e60dce0a-243c-4aec-b906-2a0be0c3a94e)
 
 > 인스턴스 유지관리 정책에 대해서는 따로 알아보도록 하겠다.
 
+## 알림&태그 추가
+
+알림과 태그 추가는 넘어간다.
+
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/48987cdc-bf66-46ea-8962-1a2415706655)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/9c05f9e8-0c56-4c11-902b-bc8f2de84119)
+
 ## 결과물
 
-아래와 같이 ASG가 생성되었다.
+아래와 같이 ASG가 생성되었다. 또한 로드밸런서와 대상 그룹도 함께 생성되었다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/9a8aecd7-755f-45de-9eed-6d9c8aa69012)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/d3fde5d0-6a90-42f6-b4f1-9f07a223ffb2)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/f1c1f81a-d481-4861-a511-2551b400ed3c)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/91aafbc5-7a88-45c2-b2ac-222935ee0e6c)
 
-현재 ASG에 속한 EC2 인스턴스가 하나도 존재하기 않기 때문에 희망 개수인 1개의 인스턴스를 생성하는 것을 확인할 수 있다. 아래와 같이 ASG의 작업 내역을 모두 확인할 수 있다.
+대상 그룹에 인스턴스가 1개 존재하는 것을 확인할 수 있다. 이는 ASG에 설정해둔 희망 개수는 1개인데 현재 EC2 인스턴스가 하나도 존재하기 않기 때문에 1개의 인스턴스를 생성한 것이다. 아래에서 생성된 EC2 인스턴스를 확인할 수 있다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/81eecb7e-68c9-415f-a2f7-de1db16dfbd2)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/44d68444-0705-422f-8292-39044b528fdf)
 
-ASG에 의해 EC2 인스턴스 1개와 대상 그룹이 생성되었다. 하지만 대상 그룹에 아직 인스턴스가 지정되지 않아서 수동으로 추가해주었다.
+이러한 ASG의 활동은 모두 기록으로 남아서 콘솔을 통해 확인할 수 있다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/cb4dab45-e153-4f36-be3d-d7157c180290)
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/b9f1d312-591d-4ef0-9c80-2584b91d06d8)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/e38912a9-efd3-4ee7-8f25-6ea3bd3c1af7)
 
 > 만약 상태 확인이 UnHealthy로 되어 있다면, EC2 인스턴스의 보안 그룹이 80포트를 허용하고 있는지를 체크해야 한다.
 
@@ -114,13 +127,21 @@ ASG에 의해 EC2 인스턴스 1개와 대상 그룹이 생성되었다. 하지�
 
 만약 희망 용량을 2개로 변경한다면 어떻게 될까? 희망 용량이 늘어남에 따라 최대 용량도 따라서 늘어나야 할 것이다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/4efc08df-0bcb-47ec-951a-b578bc8d4124)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/48eba3ac-02e7-41d3-90b2-948270bf91d8)
 
-희망 개수는 2개인데 현재 인스턴스는 1개뿐이므로 ASG는 인스턴스 1개를 추가로 생성한다.
+EC2 인스턴스 1개가 추가로 생성되었고, 자동으로 대상 그룹에 추가되었음을 확인할 수 있다.
 
-![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/ae0c9698-344d-4139-9780-e863a80b1241)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/7e4e1ee9-5b5d-45e0-9b32-89c0ae2001e4)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/c4bde7fb-fed1-44f3-8860-c3430fcbee26)
 
-> 대상 그룹에 자동으로 추가되지 않는군. ALB와 대상그룹이 연결되지 않은건가..? 대상그룹을 먼저 생성하고 연결해주어야 하나. 이건 내일 마저 해봅시다.
+ASG 콘솔을 확인해보면, 희망 개수는 1개에서 2개로 늘어남에 따라 인스턴스 1개를 추가한다고 나와있다.
+
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/d1255468-de8a-41a9-8090-c23ccdeb756f)
+
+로드밸런서에 접속해보면, ASG에 속한 2개의 인스턴스로 트래픽이 균등하게 보내지고 있음을 확인할 수 있다.
+
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/3cfc6689-796c-4b0f-8669-a8bdd1413e5b)
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/6b77df9f-f8d9-40ba-ae2a-bdda78e16fbd)
 
 # Reference
 
@@ -129,4 +150,5 @@ ASG에 의해 EC2 인스턴스 1개와 대상 그룹이 생성되었다. 하지�
 # History
 
 📌 2024-3-23: ASG Scaling 정책 정리   
-📌 2024-3-24: ASG 실제로 만들어보기 - 대상 그룹이 업데이트 안되는 오류 발생
+📌 2024-3-24: ASG 실제로 만들어보기 - 대상 그룹이 업데이트 안되는 오류 발생   
+📌 2024-3-25: 대상 그룹이 업데이트 안되는 오류 해결 - t2.micro를 사용할 수 없는 가용영역이 설정되어있어서 생겼던 오류임을 확인
