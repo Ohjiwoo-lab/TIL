@@ -30,7 +30,6 @@ GuardDuty는 여러 로그들을 머신러닝 알고리즘으로 분석해서 �
 GuardDuty 관련해서 알아둘 점은 `암호화폐 공격`에 대해 좋은 성능을 보인다는 점이다. GuardDuty에는 암호화폐 공격에 방어하기 위한 별도의 검색 유형을 정의해놓고 있기 때문이다. 아래는 AWS에서 정의해놓은 EC2 검색 유형 중 하나를 발췌한 것이다.
 
 ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/be9769b2-f62a-48b6-ab9e-f513c141d0d9)
-
 출처: [AWS Documentation](https://docs.aws.amazon.com/ko_kr/guardduty/latest/ug/guardduty_finding-types-ec2.html)
 
 그래서 암호화폐 서비스에 대해 공격을 대비하고 싶다면, GuardDuty가 좋은 선택지가 될 것이다.

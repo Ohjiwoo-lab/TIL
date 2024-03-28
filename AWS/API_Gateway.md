@@ -46,10 +46,37 @@ S3에 바로 업로드하면 보안상 문제가 될 수 있기 때문에 API Ga
 
 API Gateway는 REST API와 WebSocket을 처리할 수 있는 훌륭한 서비스이지만, 비용이 비싸고 위에서 언급한 대로 한계점이 있기 때문에 아키텍처를 구성할 때 유의할 필요가 있다.
 
+## 사용자 인증
+
+API Gateway에서 사용자가 요청을 보낼 수 있는 권한이 있는지를 확인하기 위해서 3가지 방법을 사용할 수 있다.
+
+1. IAM 기반 액세스
+
+    ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/2d4f7085-49ed-4069-a959-963568c7c982)
+
+    이는 사용자가 요청을 보낼 때 API Header에 IAM 자격증명을 함께 포함하는 방식이다. API Gateway는 IAM 자격증명을 확인하여 정상적인 사용자라면 백엔드로 요청을 프록시한다.
+
+2. Lambda 권한 부여자
+
+    이는 `Custom 권한 부여자`라고도 불리는데, 사용자에 권한을 부여하기 위해 별도의 Lambda 함수를 구현해야 하기 때문이다. 권한 부여자는 Authorizer라고 하는데, 사용자를 인증하는 Authentication과 구분해야 한다. Authorizer는 이미 인증을 받은 사용자에 대해 인증 내용을 확인한 뒤 실제로 권한을 부여하는 역할을 담당한다.
+
+    ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/c72fc0ee-c7d9-48c8-b08a-77a5883b51ff)
+
+   해당 예시에서는 사용자의 토큰 또는 파라미터를 검증하는 Lambda 권한 부여자를 설정하였다. 사용자가 OAuth, SAML, Third Party Authentication으로부터 인증을 받은 뒤 API Gateway에 요청을 하면, API Gateway는 요청을 프록시하기 전 Lambda 함수를 통해 사용자의 토큰이 정상적인 것인지 검증한다.
+
+3. Cognito User Pool
+
+    마지막은 Cognito User Pool을 사용하는 방법이다.
+
+    ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/31c323db-55db-472b-8351-8057957eeabd)
+
+    사용자는 요청을 보내기 전에 Cognito User Pool을 통해 인증을 받아야 한다. 인증 후 받은 토큰을 통해 API Gateway에 요청을 보내면, API Gateway는 해당 토큰을 Cognito User Pool로 검증한다. API Gateway 똑똑해서 토큰을 검증하는 방법을 알고 있기 때문에 Lambda 권한 부여자처럼 따로 구현할 필요가 없기 때문에 더 편리한 방법일 수 있다.
+
 # Reference
 
 [Udemy 강의 - AWS Certified Solutions Architect Professional](https://www.udemy.com/course/aws-csa-professional/?couponCode=KRLETSLEARNNOW)
 
 # History
 
-📌2024-3-26: API Gateway 개요와 한계점   
+📌 2024-3-26: API Gateway 개요와 한계점   
+📌 2024-3-28: API Gateway 사용자 인증 방법 3가지 정리   
