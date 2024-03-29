@@ -269,6 +269,6 @@ resource "aws_vpc_endpoint_route_table_association" "private_endpoint" {
 
 # History
 
-📌 2024-3-2: VPC의 정의와 테라폼으로 VPC, 서브넷 생성하기   
+📌 2024-3-2: 테라폼으로 VPC, 서브넷 생성하기   
 📌 2024-3-3: 인터넷 게이트웨이와 NAT 게이트웨이 생성하기   
 📌 2024-3-4: 라우팅 테이블 생성 및 프라이빗, 퍼블릭 서브넷 구성
