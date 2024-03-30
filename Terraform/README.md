@@ -15,3 +15,5 @@
 - S3를 Terraform으로 구현하고 aws cli를 통해 파일 업로드 및 다운로드하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/05_S3_by_Terraform.md)
 
 - IAM를 Terraform으로 구현하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/06_IAM_by_Terraform.md)
+
+- Backend로 state 파일 관리하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/07_Terraform_Backend.md)
