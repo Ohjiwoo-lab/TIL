@@ -17,3 +17,7 @@
 - IAM를 Terraform으로 구현하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/06_IAM_by_Terraform.md)
 
 - Backend로 state 파일 관리하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/07_Terraform_Backend.md)
+
+- Terraform에서 Variables 사용하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/08_Terraform_Variable.md)
+
+- Terraform에서 Functions 사용하기 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/09_Terraform_Functions.md)
