@@ -23,3 +23,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - Auto Scaling Groups 스케일링 정책 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Auto_Scaling_Groups.md)
 
 - API Gateway 개요와 한계점, 사용자 인증 방법 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/API_Gateway.md)
+
+- 로드밸런서 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Load_Balancer.md)
