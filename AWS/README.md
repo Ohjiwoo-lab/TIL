@@ -24,4 +24,4 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 
 - API Gateway 개요와 한계점, 사용자 인증 방법 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/API_Gateway.md)
 
-- 로드밸런서 3가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Load_Balancer.md)
+- 로드밸런서 3가지 종류와 요청 라우팅 알고리즘 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Load_Balancer.md)
