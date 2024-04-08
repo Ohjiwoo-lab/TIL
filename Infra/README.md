@@ -9,3 +9,5 @@
 ## Summary
 
 - DR 시스템 4가지 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/DR_System.md)
+
+- 네트워크 토폴로지 아키텍처(3계층, Spine-Leaf) [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Network_Architecture.md)
