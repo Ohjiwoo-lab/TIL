@@ -12,4 +12,4 @@
 
 - 네트워크 토폴로지 아키텍처(3계층, Spine-Leaf) [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Network_Architecture.md)
 
-- LACP 개념, 동작방식, 장점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/LACP.md)
+- Link Aggregation Group이란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/LACP.md)
