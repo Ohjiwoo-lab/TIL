@@ -8,6 +8,8 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 
 - VPC의 구성요소 및 프라이빗 서브넷, 퍼블릭 서브넷의 차이점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_and_Subnet.md)
 
+- VPC Peering과 Edge to Edge Routing [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_Peering.md)
+
 - IAM 구성요소와 Policy 구조 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/IAM.md)
 
 - Identity Federation 3가지 방법 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Identity_Federation.md)
