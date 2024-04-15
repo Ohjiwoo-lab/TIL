@@ -28,9 +28,11 @@ VPC Peering은 2개의 VPC 간에 연결할 수 있다. 그러면 3개를 연결
 
 ## Edge to Edge Routing
 
-VPC Peering은 Edge to Edge Routing을 지원하지 않는다. VPC 간에 Transitive가 성립하지 않던 것과 비슷한 개념이다. 그림을 통해 살펴보자.
+VPC Peering은 Site-to-Site VPN, Direct Connect, IGW, NAT, Gateway VPC Endpoint에 대한 Edge to Edge Routing을 지원하지 않는다. VPC 간에 Transitive가 성립하지 않던 것과 비슷한 개념이다. 그림을 통해 살펴보자.
 
-1. VPN/Direct Connect
+### 불가능한 조합
+
+1. Site-to-Site VPN/Direct Connect
 
     ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/4f8a7bf3-2fbd-4334-aff6-09b3bd7fd41d)
 
@@ -44,6 +46,23 @@ VPC Peering은 Edge to Edge Routing을 지원하지 않는다. VPC 간에 Transi
 
     VPC Peering을 통해 다른 VPC 내에 있는 NAT Gateway와 Internet Gateway를 이용하여 인터넷에 접근하려는 시도는 좋은 접근인 것처럼 보일 수 있지만, Peering이 Edge to Edge Routing을 지원하지 않는다는 점을 명심해야 한다.
 
+3. Gateway VPC Endpoint
+
+    ![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/159348be-fb57-4bcb-b4db-908ee54de797)
+
+    VCP-B의 프라이빗 서브넷에 있는 EC2 인스턴스는 VPC Endpoint Gateway를 통해 VPC 외부의 S3에 비공개로 접근할 수 있다. 하지만 VPC-B와 Peering 설정되어 있는 VPC-A에 있는 EC2 인스턴스는 VPC-B의 VPC Endpoint를 통해 접근이 불가능하다. VPC Endpoint Gateway는 VPC 외부로 확장될 수 없기 때문이다. 그래서 VPN, Direct Connect, Transit Gateway, Peering에 의한 확장 관계에서는 모두 사용할 수 없다.
+
+### 가능한 조합
+
+Gateway VPC Endpoint는 Peering 관계에서 사용할 수 없었지만, Interface VPC Endpoint는 가능하다. 
+
+![image](https://github.com/Ohjiwoo-lab/TIL/assets/74577768/fa22179f-a2cd-407e-9102-0fcaa443d7b0)
+
+Interface VPC Endpoint를 설정하면 ENI가 프로비저닝된다. 그러면 Endpoint와 S3 간에 PrivateLink가 생성되면서 비공개로 액세스할 수 있게 되는 원리인 것 같다. 이는 Gateway에서와 달리 ENI라는 인터페이스를 통해 연결하는 것이기 때문에 VPC Peering 관계에서도 접근이 가능하다.
+
+> PrivateLink에 대해서는 아직 잘 모르겠다.. 계속 공부하면서 제대로 이해하면 정리할 예정이다.
+
+
 # Reference
 
 [Udemy 강의 - AWS Certified Solutions Architect Professional](https://www.udemy.com/course/aws-csa-professional/?couponCode=KRLETSLEARNNOW)
@@ -51,3 +70,4 @@ VPC Peering은 Edge to Edge Routing을 지원하지 않는다. VPC 간에 Transi
 # History
 
 📌 2024-4-14: VPC Peering과 Edge-to-Edge Routing   
+📌 2024-4-15: Edge-to-Edge Routing 사례 추가 - VPC Endpoint Gateway와 VPC Endpoint Interface   
