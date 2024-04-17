@@ -2,7 +2,9 @@
 
 AWS에서 제공하는 Directory Service는 Microsoft Active Directory(AD)를 AWS에서 사용할 수 있게 해주는 서비스이다.
 
-Microsoft AD란 Windows 서버에서 사용자 계정을 생성하고 관리하는 서비스라고 생각하면 된다. Domain Controller로 로그인을 하면 연결되어 있는 모든 컴퓨터에 접근할 수 있다는 장점이 있다.
+**📚 Active Directory란?**
+
+    Microsoft AD란 Windows 서버에서 사용자 계정을 생성하고 관리하는 서비스라고 생각하면 된다. Domain Controller로 로그인을 하면 연결되어 있는 모든 컴퓨터에 접근할 수 있다는 장점이 있다.
 
 AWS에서는 총 3가지 방법으로 AD를 지원한다.
 

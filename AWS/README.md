@@ -29,3 +29,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - 로드밸런서 3가지 종류와 요청 라우팅 알고리즘 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Load_Balancer.md)
 
 - Kinesis Data Stream, 생산자와 소비자 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Kinesis_Data_Stream.md)
+
+- CloudFront 개념, 오리진, Custom HTTP Header [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/CloudFront.md)
