@@ -1,3 +1,5 @@
+> 이 시리즈는 유튜브 [널널한 개발자 TV](https://www.youtube.com/watch?v=k1gyh9BlOT8&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy)의 강의 내용을 요약하거나 이해한 내용을 토대로 재구성하여 작성된 글입니다.
+
 # 스위치란?
 
 스위치에 대해 이해하려면 먼저 호스트를 알아야 합니다. [저번 글](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/01_Network_Overview.md#port-%EB%B2%88%ED%98%B8-ip-%EC%A3%BC%EC%86%8C-mac-%EC%A3%BC%EC%86%8C%EA%B0%80-%EC%8B%9D%EB%B3%84%ED%95%98%EB%8A%94-%EA%B2%83)에서 IP주소가 `호스트에 대한 식별자`라고 했었습니다.
