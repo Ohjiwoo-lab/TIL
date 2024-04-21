@@ -4,3 +4,7 @@
 
 - 시작일: 2023-12-14
   - 매일 업로드하지 못할 때도 있었지만 꾸준히 업로드하고 있습니다.
+
+|구분|스터디 내용|
+|------|---------------------------------|
+|AWS|[VPC 구성요소와 서브넷](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_and_Subnet.md) <br/> [VPC 피어링](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_Peering.md)|
