@@ -13,3 +13,5 @@
 - 네트워크 토폴로지 아키텍처(3계층, Spine-Leaf) [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Network_Architecture.md)
 
 - Link Aggregation Group이란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/LACP.md)
+
+- 하이퍼바이저란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Hypervisor.md)
