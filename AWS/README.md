@@ -33,3 +33,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - CloudFront 개념, 오리진, Custom HTTP Header [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/CloudFront.md)
 
 - CloudWatch Alarm [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/CloudWatch.md)
+
+- Resource Access Manager(RAM) 개념 정리 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Resource_Access_Manager.md)

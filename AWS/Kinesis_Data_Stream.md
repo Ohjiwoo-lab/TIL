@@ -48,9 +48,9 @@ Kinesis Data Stream의 생산자와 소비자가 될 수 있는 후보는 다음
 
 2. Lambda
 
-    이벤트 소스 매핑을 통해 Lambda 함수를 호출할 수 있다. 이벤트 소스 매핑이란, Lambda 함수를 직접 호출하지 않더라도 이벤트 소스로부터 Lambda를 간접 호출할 수 있도록 하는 기능이다. Kinesis, SQS, MQ 등의 소스로부터 Lambda가 이벤트를 읽는다.
+    `이벤트 소스 매핑`을 통해 Lambda 함수를 호출할 수 있다. Kinesis Stream에서 이벤트 소스 매핑을 통해 Lambda를 호출하면, 실시간으로 데이터를 처리할 수 있다. 만약 데이터를 실시간으로 S3 버킷에 저장하고 싶다면, 람다 함수를 이용해야 한다.
 
-    Kinesis Stream에서 이벤트 소스 매핑을 통해 Lambda를 호출하면, 실시간으로 데이터를 처리할 수 있다. 만약 데이터를 실시간으로 S3 버킷에 저장하고 싶다면, 람다 함수를 이용할 수 있다.
+    > 이벤트 소스 매핑이란, Lambda 함수를 직접 호출하지 않더라도 이벤트 소스로부터 Lambda를 간접 호출할 수 있도록 하는 기능이다. Lambda는 Kinesis Data Streams, SQS, MQ 등의 이벤트 소스로부터 이벤트가 있는지를 Long Polling을 통해 확인한다. 그리고 이벤트가 있으면 이벤트를 Poll 해와서 처리한다. 이는 이벤트 소스인 Kinesis, SQS, MQ에서 람다를 호출하지 않아도 알아서 이벤트를 가져와 처리할 수 있는 방식이다.
 
 3. Kinesis Client Library (KCL)
 
@@ -81,3 +81,4 @@ Kinesis Data Stream의 생산자와 소비자가 될 수 있는 후보는 다음
 # History
 
 📌 2024-4-16: Kinesis Data Stream, 생산자와 소비자   
+📌 2024-4-24: 이벤트 소스 매핑 추가 내용 정리   
