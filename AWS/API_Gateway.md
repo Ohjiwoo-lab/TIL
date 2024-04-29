@@ -72,6 +72,28 @@ API Gateway에서 사용자가 요청을 보낼 수 있는 권한이 있는지�
 
     사용자는 요청을 보내기 전에 Cognito User Pool을 통해 인증을 받아야 한다. 인증 후 받은 토큰을 통해 API Gateway에 요청을 보내면, API Gateway는 해당 토큰을 Cognito User Pool로 검증한다. API Gateway 똑똑해서 토큰을 검증하는 방법을 알고 있기 때문에 Lambda 권한 부여자처럼 따로 구현할 필요가 없기 때문에 더 편리한 방법일 수 있다.
 
+## API Gateway 오류 코드
+
+API Gateway를 운영할 때 발생하는 대표적인 오류 코드가 있다. 오류 코드가 무엇을 의미하는 지를 알고있어야 문제를 파악하고 제대로 대응할 수 있을 것이다.
+
+다음은 대표적인 오류 코드이다.
+
+- 클라이언트 측 오류
+
+    - `403 Error`: 클라이언트가 API Gateway의 API를 호출할 권한이 없는 경우에 발생한다.
+
+    - `429 Error`: 클라이언트가 API Gateway로 과도한 양의 요청을 하여 API Gateway의 요청 할당량을 넘긴 경우 발생한다.
+
+- 서버 측 오류
+
+    - `502 Error`: Bad Gateway 오류로, 백엔드에서 잘못된 응답이 반환되거나 Lambda 함수와 통합된 경우 Lamdba 함수의 동시성 한도를 초과하였을 때 발생한다.
+
+    - `504 Error`: API Gateway의 타임아웃 시간인 29초를 초과한 경우 발생한다.
+
+기본적으로 `4xx`은 클라이언트 측에서 발생한 오류이고, `5xx`은 서버 측에서 발생한 오류이다. 이 사실만 알더라도 어디에서 문제가 생긴지 파악할 수 있기 때문에 유용하다.
+
+만약 429 에러코드가 발견되었다면 API Gateway의 요청 할당량을 늘려야 할 것이고, 502 에러코드가 발견되면 백엔드의 응답을 확인하고 Lambda 함수일 경우 Lambda의 동시성 제한을 늘려야 할 것이다.
+
 # Reference
 
 [Udemy 강의 - AWS Certified Solutions Architect Professional](https://www.udemy.com/course/aws-csa-professional/?couponCode=KRLETSLEARNNOW)
@@ -80,3 +102,4 @@ API Gateway에서 사용자가 요청을 보낼 수 있는 권한이 있는지�
 
 📌 2024-3-26: API Gateway 개요와 한계점   
 📌 2024-3-28: API Gateway 사용자 인증 방법 3가지 정리   
+📌 2024-4-29: API Gateway 오류 코드 유형 정리   
