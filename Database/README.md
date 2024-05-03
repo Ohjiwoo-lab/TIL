@@ -5,3 +5,5 @@
 ## Summary
 
 - 트랜잭션 격리 레벨이란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Database/Transaction_Isolation_Level.md)
+
+- 트랜잭션 ACID란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Database/What_Is_ACID.md)
