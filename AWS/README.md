@@ -37,3 +37,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - Resource Access Manager(RAM) 개념 정리 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Resource_Access_Manager.md)
 
 - AWS Organization과 SCP [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Organization.md)
+
+- EFS(Elastic File System)이란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Elastic_File_System.md)
