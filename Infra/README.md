@@ -17,3 +17,5 @@
 - 하이퍼바이저란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Hypervisor.md)
 
 - Cloud Migration Strategies: 6R [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Cloud_Migration_Strategies.md)
+
+- 데이터 전송 방식에 따른 스토리지 비교(DAS,NAS,SAN) [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Storage.md)
