@@ -11,3 +11,5 @@
 - Host, Switch, Network의 관계와 Switch가 하는 일 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/02_What_is_Switch.md)
 
 - SSL Handshake 과정 정리 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/SSL_Handshake.md)
+
+- TCP와 UDP의 차이점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/TCP_and_UDP.md)
