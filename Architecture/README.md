@@ -9,3 +9,5 @@
 - CICD 개념과 AWS에서 CICD 파이프라인 구축하는 방법 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/CICD.md)
 
 - 3 Tier Architecture란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/3_Tier_Architecture.md)
+
+- MSA 개념과 장단점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/Microservice_Architecture.md)
