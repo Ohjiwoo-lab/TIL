@@ -1,6 +1,6 @@
 # AWS
 
-현재 AWS Solutions Architect Professioanl 자격증을 공부하는 중입니다. 공부하며 배운 내용을 복습하기 위해 정리하고 있습니다. AWS 서비스와 관련된 개념과 어떤 기능을 가지고 있는지를 정리해나갈 예정입니다.
+AWS Solutions Architect Professioanl 자격증 취득을 위해 공부했던 내용을 복습하기 위해 정리하고 있습니다. AWS 서비스와 관련된 개념과 어떤 기능을 가지고 있는지를 정리해나갈 예정입니다.
 
 AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해나가고 있기 때문에 모든 서비스를 다 정리할 수는 없습니다. 하지만 계속 추가하면서 대표적으로 사용되는 서비스들은 모두 정리하고 싶습니다.
 
@@ -39,3 +39,5 @@ AWS는 정말 방대한 서비스를 가지고 있고 현재도 계속 확장해
 - AWS Organization과 SCP [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Organization.md)
 
 - EFS(Elastic File System)이란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Elastic_File_System.md)
+
+- S3(Simple Storage Service)의 스토리지 유형 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Simple_Storage_Service.md)
