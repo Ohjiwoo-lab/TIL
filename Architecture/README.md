@@ -11,3 +11,5 @@
 - 3 Tier Architecture란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/3_Tier_Architecture.md)
 
 - MSA 개념과 장단점 [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/Microservice_Architecture.md)
+
+- 서버리스 아키텍처란? [click!](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/Serverless_Architecture.md)
