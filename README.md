@@ -2,12 +2,18 @@
 
 클라우드 엔지니어가 되기 위해 기반이 되는 CS지식을 공부하여 정리하기 위한 저장소입니다. 매일 올리지는 못하지만 최대한 자주 글을 작성하고자 노력하고 있습니다.
 
+## AWS SA Professional
+
+AWS SA Professional 자격증의 문제는 AWS에서 제시하는 모범 사례입니다. 어떠한 상황에서 어떤 아키텍처를 설계해야 하는지에 대한 내용을 담고 있습니다. 그래서 자격증을 취득하는 데에 그치지 않고 자격증을 준비하며 풀었던 문제들을 다시 살펴보며 아키텍처를 스스로 그려보고자 합니다.
+
+(click! 👉) [AWS SA Professional 문제 모음](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/AWS_SA_Professional.md)
+
+
 ## AWS
 
-<details>
-   <summary> <b> 📜 AWS Service. 목록 보기 </b> </summary>
+AWS에서 제공하는 서비스와 이를 통해 구축할 수 있는 아키텍처의 종류에 대해 정리했습니다.
 
-<br/>
+**AWS 서비스**
 
 - [VPC 구성요소와 서브넷](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/VPC_and_Subnet.md)
 
@@ -45,14 +51,7 @@
 
 - [S3(Simple Storage Service)의 스토리지 유형](https://github.com/Ohjiwoo-lab/TIL/blob/main/AWS/Simple_Storage_Service.md)
 
-<br/>
-
-</details>
-
-<details>
-   <summary> <b> 📜 Architecture. 목록 보기 </b> </summary>
-
-<br/>
+**AWS를 활용한 아키텍처**
 
 - [AWS SNS와 SQS로 구현하는 디커플링](https://github.com/Ohjiwoo-lab/TIL/blob/main/Architecture/Decoupling.md)
 
@@ -66,14 +65,11 @@
 
 <br/>
 
-</details>
-
 ## Container
 
-<details>
-   <summary> <b> 📜 Docker. 목록 보기 </b> </summary>
+컨테이너 기술을 구현한 Docker와 컨테이너를 오케스트레이션하는 툴인 Kubernetes에 대해 정리했습니다.
 
-<br/>
+**Docker**
 
 - [도커와 컨테이너의 개념](https://github.com/Ohjiwoo-lab/TIL/blob/main/Docker/What_Is_Docker.md)
 
@@ -81,27 +77,17 @@
 
 - [도커 이미지 빌드하는 방법](https://github.com/Ohjiwoo-lab/TIL/blob/main/Docker/Docker_Image_Build.md)
 
-<br/>
-
-</details>
-
-<details>
-   <summary> <b> 📜 Kubernetes. 목록 보기 </b> </summary>
-
-<br/>
+**Kubernetes**
 
 - [컨테이너 오케스트레이션이란?](https://github.com/Ohjiwoo-lab/TIL/blob/main/Kubernetes/Container_Orchestration.md)
 
 <br/>
 
-</details>
-
 ## Infra
 
-<details>
-   <summary> <b> 📜 Infra. 목록 보기 </b> </summary>
+클라우드 서비스도 근간에는 데이터센터, 즉 인프라 환경이 존재합니다. 클라우드 시대로 진입하면서 데이터센터도 많은 변화가 있었는데, 가장 대표적인 기술인 가상화, SDN 등에 대한 내용을 공부하며 정리했습니다. 대부분 KBDS 드림버스컴퍼니 인프라 운영 인턴을 하며 배운 내용들을 기반으로 하고 있습니다. 또한 인프라를 구성하는 요소인 네트워크와 리눅스, 데이터베이스에 대한 내용과, 서버 구성을 자동화해주는 Terraform에 대해서도 정리했습니다.
 
-<br/>
+**Infra**
 
 - [DR 시스템이란?](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/DR_System.md)
 
@@ -119,14 +105,7 @@
 
 - [SDN의 개념과 아키텍처](https://github.com/Ohjiwoo-lab/TIL/blob/main/Infra/Software_Define_Network.md)
 
-<br/>
-
-</details>
-
-<details>
-   <summary> <b> 📜 Terraform. 목록 보기 </b> </summary>
-
-<br/>
+**Terraform**
 
 - [데브옵스의 5가지 철학과 IaC 개념](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/01_What_is_DevOps.md)
 
@@ -146,17 +125,7 @@
 
 - [테라폼에서 함수 사용하기](https://github.com/Ohjiwoo-lab/TIL/blob/main/Terraform/09_Terraform_Functions.md)
 
-<br/>
-
-</details>
-
-
-## Network
-
-<details>
-   <summary> <b> 📜 Network. 목록 보기 </b> </summary>
-
-<br/>
+**Network**
 
 - [통신과 네트워크의 차이점](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/Communications_vs_Network.md)
 
@@ -168,31 +137,13 @@
 
 - [TCP와 UDP의 차이점](https://github.com/Ohjiwoo-lab/TIL/blob/main/Network/TCP_and_UDP.md)
 
-<br/>
-
-</details>
-
-## Linux
-
-<details>
-   <summary> <b> 📜 Linux. 목록 보기 </b> </summary>
-
-<br/>
+**Linux**
 
 - [Arm 아키텍처에서의 익셉션 레벨](https://github.com/Ohjiwoo-lab/TIL/blob/main/Linux/Exception_Level.md)
 
 - [프로세스 메모리 레이아웃](https://github.com/Ohjiwoo-lab/TIL/blob/main/Linux/Process_Memory_Layout.md)
 
-<br/>
-
-</details>
-
-## Database
-
-<details>
-   <summary> <b> 📜 Database. 목록 보기 </b> </summary>
-
-<br/>
+**Database**
 
 - [트랜잭션 격리 레벨이란?](https://github.com/Ohjiwoo-lab/TIL/blob/main/Database/Transaction_Isolation_Level.md)
 
@@ -200,20 +151,10 @@
 
 <br/>
 
-</details>
-
-
 ## Non Category
 
-<details>
-   <summary> <b> 📜 목록 보기 </b> </summary>
-
-<br/>
+그 밖의 다양한 내용을 담고 있습니다.
 
 - [모노토닉 스택](https://github.com/Ohjiwoo-lab/TIL/blob/main/Non-category/monotonic_stack.md)
 
 - [드림버스 컴퍼니 면접 복기](https://github.com/Ohjiwoo-lab/TIL/blob/main/Non-category/Dreamverse_Company_Interview.md)
-
-<br/>
-
-</details>
